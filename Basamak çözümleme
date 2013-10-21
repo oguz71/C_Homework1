@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int sayi,binlik,yuzluk,onluk,birlik;
+int main()
+{
+    printf ("Cozumlenecek sayi="); 
+    scanf("%d",&sayi);
+    binlik=sayi/1000;
+    yuzluk=(sayi-binlik*1000)/100;
+    onluk=((sayi)-(binlik*1000)-(yuzluk*100))/10;
+   birlik=((sayi)-(binlik*1000)-(yuzluk*100)-(onluk*10));
+   printf("Girilen sayi = %d \n",sayi);
+   printf("\n%d tane binlik sayi",binlik);
+   printf("\n%d tane yuzluk sayi",yuzluk);
+   printf("\n%d tane onluk sayi",onluk);
+   printf("\n%d tane birlik sayi vardir.",birlik);
+   getch();
+   return 0;
+}
